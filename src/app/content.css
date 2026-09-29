@@ -1,0 +1,399 @@
+/* Supplied book covers and institution logos keep their complete artwork. */
+.project-artwork--contain { object-fit: contain !important; background: #fff; }
+.project-artwork--northwestern { background: #4e2a84; }
+/* Keep the full dance pose visible in cards, wide heroes, and their animated clones. */
+.project-artwork--stage { background: #000; object-position: center; }
+.project-image--top { object-position: center top !important; }
+.project-hero--contained,
+.project-hero--contained img { background: var(--frame-background, #000); }
+.video-block img.video-poster--contain { object-fit: contain; background: #000; }
+.project-intro {
+  height: auto;
+  min-height: clamp(620px, 73svh, 900px);
+  padding: clamp(120px, 12svh, 190px) 0 clamp(46px, 5svh, 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-intro h1 {
+  width: 100%;
+  margin-inline: auto;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+.project-intro.project-title-short h1 {
+  max-width: 13ch;
+  font-size: clamp(78px, 10vw, 174px);
+  line-height: .82;
+}
+.project-intro.project-title-medium h1 {
+  max-width: 16ch;
+  font-size: clamp(68px, 8vw, 132px);
+  line-height: .84;
+  letter-spacing: -.055em;
+}
+.project-intro.project-title-long h1 {
+  max-width: 22ch;
+  font-size: clamp(54px, 6.2vw, 100px);
+  line-height: .88;
+  letter-spacing: -.05em;
+}
+.project-intro.project-title-xlong h1 {
+  max-width: 27ch;
+  font-size: clamp(46px, 4.8vw, 78px);
+  line-height: .92;
+  letter-spacing: -.04em;
+}
+.project-intro > em {
+  margin-top: .08em;
+  font-size: clamp(50px, 5.4vw, 88px);
+  line-height: 1;
+}
+.project-intro.project-title-long > em,
+.project-intro.project-title-xlong > em {
+  font-size: clamp(44px, 4.5vw, 70px);
+}
+.project-subtitle {
+  margin: .75em auto 0;
+  max-width: 50ch;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.project-intro dl {
+  position: static;
+  width: 80%;
+  margin: clamp(30px, 4svh, 54px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+.project-intro dl > div {
+  min-width: 0;
+  max-width: none;
+}
+.project-intro dl > div:not(:first-child):not(:last-child) { text-align: center; }
+.project-intro dl > div:last-child:not(:first-child) { text-align: right; }
+.project-intro dd { overflow-wrap: anywhere; }
+.project-statement h2.has-statement-lead::first-line {
+  font-family: var(--font-sans);
+  font-style: normal;
+}
+.project-statement-kicker {
+  display: block;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 400;
+}
+.project-statement-lead {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  line-height: .9;
+  text-wrap: balance;
+  white-space: pre-line;
+}
+.project-statement-copy {
+  display: block;
+  text-wrap: balance;
+  white-space: pre-line;
+}
+.project-cinnamon-and-stars .project-statement h2 {
+  font-size: clamp(54px, 6.5vw, 100px);
+  line-height: 1;
+  letter-spacing: -.045em;
+}
+.project-cinnamon-and-stars .project-statement-kicker {
+  margin-bottom: .16em;
+  font-size: .82em;
+  line-height: .95;
+}
+.project-cinnamon-and-stars .project-statement-lead {
+  margin-bottom: .24em;
+  font-size: .78em;
+  line-height: 1;
+  letter-spacing: -.025em;
+  white-space: nowrap;
+}
+.project-cinnamon-and-stars .project-statement-copy {
+  font-size: .88em;
+  line-height: .98;
+}
+.project-cinnamon-and-stars .project-statement { padding-bottom: clamp(56px, 6vw, 110px); }
+.project-cinnamon-and-stars .project-blocks { gap: clamp(56px, 6vw, 110px); }
+.project-the-metal-in-i .project-statement {
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+.project-the-metal-in-i .project-statement h2 {
+  max-width: 17ch;
+  font-size: clamp(52px, 6.4vw, 98px);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+.project-the-metal-in-i .project-statement-kicker {
+  margin-bottom: .25em;
+  font-size: .54em;
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+.project-the-metal-in-i .project-statement-lead {
+  margin-bottom: .2em;
+  font-size: .9em;
+  line-height: .96;
+  letter-spacing: -.025em;
+  white-space: nowrap;
+}
+.project-the-metal-in-i .project-statement-copy {
+  max-width: 16ch;
+  font-size: .76em;
+  line-height: 1;
+}
+.project-the-metal-in-i .project-blocks { gap: clamp(56px, 8vw, 120px); }
+
+/* About: identity first, then concrete practice and experience. */
+.about-page { padding-top: clamp(170px, 12vw, 230px); }
+.about-hero {
+  min-height: 0;
+  padding-bottom: clamp(120px, 13vw, 220px);
+}
+.about-hero-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: clamp(76px, 7vw, 126px);
+  font-size: 11px;
+  letter-spacing: .06em;
+}
+.about-hero h1 {
+  position: static;
+  z-index: auto;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  gap: clamp(64px, 6vw, 112px);
+}
+.about-title-line {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(34px, 3vw, 72px);
+  min-width: 0;
+  white-space: nowrap;
+}
+.about-title-line:last-child { justify-content: flex-end; }
+.about-title-line strong {
+  font-size: clamp(84px, 9.2vw, 160px);
+  font-weight: 400;
+  line-height: .8;
+  letter-spacing: -.07em;
+}
+.about-title-line em {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(58px, 6vw, 104px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.025em;
+  text-transform: none;
+}
+.about-identity {
+  margin-top: clamp(110px, 11vw, 190px);
+  display: grid;
+  grid-template-columns: minmax(220px, .7fr) minmax(0, 1fr) minmax(340px, .9fr);
+  gap: clamp(36px, 5vw, 86px);
+  align-items: start;
+}
+.about-photo {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #deded9;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-identity > p {
+  max-width: 32ch;
+  margin: 0;
+  font-size: clamp(24px, 2.3vw, 36px);
+  line-height: 1.18;
+  letter-spacing: -.035em;
+}
+.about-identity dl { margin: 0; }
+.about-identity dl > div {
+  display: grid;
+  grid-template-columns: 34% 1fr;
+  gap: 1rem;
+  padding: 13px 0;
+  border-top: 1px solid #bdbdb8;
+}
+.about-identity dl > div:last-child { border-bottom: 1px solid #bdbdb8; }
+.about-identity dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.about-identity dd { margin: 0; line-height: 1.3; }
+.about-intro {
+  margin: 0 0 clamp(110px, 14vw, 220px);
+  grid-template-columns: 20% 1fr;
+  gap: 4vw;
+}
+.about-intro p {
+  max-width: 18ch;
+  font-size: clamp(44px, 5.6vw, 86px);
+  line-height: .98;
+  text-wrap: balance;
+}
+.practice-sections section {
+  grid-template-columns: 8% 32% 1fr;
+  gap: 2vw;
+  padding: clamp(24px, 2.5vw, 42px) 0 clamp(42px, 4vw, 70px);
+}
+.practice-sections h2 {
+  max-width: 10ch;
+  font-size: clamp(34px, 3.8vw, 58px);
+  line-height: .95;
+}
+.practice-sections p { max-width: 48ch; }
+.experience { padding: clamp(120px, 15vw, 230px) 0; }
+.experience-heading {
+  margin: clamp(36px, 4vw, 62px) 0 clamp(70px, 9vw, 140px);
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 8vw;
+  align-items: end;
+}
+.experience .experience-heading h2 {
+  margin: 0;
+  font-size: clamp(58px, 8vw, 122px);
+  line-height: .83;
+}
+.experience-heading > p {
+  max-width: 40ch;
+  margin: 0 0 .4em;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.45;
+}
+.experience-list { margin-bottom: clamp(42px, 5vw, 80px); border-top: 1px solid #aaa; }
+.experience-list article {
+  display: grid;
+  grid-template-columns: 16% 30% 1fr;
+  gap: 2vw;
+  align-items: start;
+  padding: 22px 0 30px;
+  border-bottom: 1px solid #aaa;
+}
+.experience-list article > span { font-size: 11px; letter-spacing: .04em; }
+.experience-list h3 {
+  margin: 0;
+  font-size: clamp(24px, 2.4vw, 38px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+.experience-list p { max-width: 50ch; margin: 0; font-size: 17px; line-height: 1.5; }
+.experience > a { display: inline-block; font-size: 18px; }
+.contact-panel h2 { max-width: 13ch; }
+
+.next-project.has-long-title h2 { max-width: 26ch; font-size: clamp(36px, 4.5vw, 92px); line-height: .95; }
+.research-points ul { margin: 0; padding-left: 1em; font-size: 19px; line-height: 1.5; }
+.research-points li + li { margin-top: 1em; }
+.manuscript { width: min(100%, 720px); margin: 0 auto; font-size: clamp(17px, 1.45vw, 21px); line-height: 1.75; }
+.manuscript p { margin: 0 0 1.2em; }
+.manuscript h2 { margin: 3em 0 1em; font-family: var(--font-serif); font-weight: 400; font-size: 2.6em; line-height: 1.1; }
+.manuscript h2:first-child { margin-top: 0; }
+.manuscript hr { width: 4em; border: 0; border-top: 1px solid currentColor; margin: 2.5em auto; }
+.manuscript-verse { font: inherit; font-size: .8em; line-height: 1.35; white-space: pre; overflow-x: auto; padding-bottom: 1em; }
+.poetry-manuscript {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(64px, 8vw, 128px);
+}
+.poetry-poem { min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.poetry-poem::-webkit-scrollbar { display: none; }
+.poetry-copy {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.25vw, 19px);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .005em;
+}
+.poetry-copy--spatial { width: max-content; min-width: 100%; white-space: pre; }
+.poetry-copy--mobile { display: none; }
+@media (min-width: 721px) {
+  .portfolio-page .list-index ol { font-size: min(2.9vw, 4.2vh); line-height: 1.14; }
+}
+@media (max-width: 720px) {
+  .about-page { padding-top: 112px; }
+  .about-hero { min-height: 0; padding-bottom: 34vw; }
+  .about-hero-meta { margin-bottom: 20vw; }
+  .about-hero h1 { gap: 16vw; }
+  .about-title-line,
+  .about-title-line:last-child {
+    display: block;
+    white-space: normal;
+  }
+  .about-title-line strong { display: block; font-size: 15vw; line-height: .82; }
+  .about-title-line em { display: block; margin-top: .12em; font-size: 14vw; line-height: .9; }
+  .about-title-line:last-child em { text-align: right; }
+  .about-identity { margin-top: 22vw; display: block; }
+  .about-photo { width: min(76vw, 360px); margin: 0 0 14vw auto; }
+  .about-identity > p { font-size: 24px; }
+  .about-identity dl { margin-top: 14vw; }
+  .about-identity dl > div { grid-template-columns: 31% 1fr; }
+  .about-intro { margin: 0 0 30vw; display: block; }
+  .about-intro > span { display: block; margin-bottom: 28px; }
+  .about-intro p { max-width: none; font-size: 11.5vw; }
+  .practice-sections section { grid-template-columns: 38px 1fr; gap: 0; }
+  .practice-sections h2 { max-width: none; font-size: 9vw; }
+  .practice-sections p { grid-column: 2; margin-top: 20px; }
+  .experience { padding: 34vw 0; }
+  .experience-heading { margin: 28px 0 24vw; display: block; }
+  .experience .experience-heading h2 { font-size: 13vw; }
+  .experience-heading > p { margin-top: 14vw; font-size: 18px; }
+  .experience-list article { grid-template-columns: 72px 1fr; gap: 14px; padding: 20px 0 28px; }
+  .experience-list h3 { font-size: 26px; }
+  .experience-list p { grid-column: 2; font-size: 16px; }
+  .project-intro {
+    min-height: 88svh;
+    padding: 16svh 0 6svh;
+  }
+  .project-intro.project-title-short h1 { max-width: 12ch; font-size: 17vw; }
+  .project-intro.project-title-medium h1 { max-width: 16ch; font-size: 13.5vw; line-height: .88; }
+  .project-intro.project-title-long h1 { max-width: 20ch; font-size: 11vw; line-height: .92; }
+  .project-intro.project-title-xlong h1 { max-width: 23ch; font-size: 9.5vw; line-height: .96; }
+  .project-intro > em,
+  .project-intro.project-title-long > em,
+  .project-intro.project-title-xlong > em { margin-top: .12em; font-size: 13vw; }
+  .project-subtitle { font-size: 16px; }
+  .project-intro dl {
+    width: 100%;
+    margin-top: 5svh;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .project-intro dl > div,
+  .project-intro dl > div:not(:first-child):not(:last-child),
+  .project-intro dl > div:last-child:not(:first-child) { text-align: left; }
+  .project-cinnamon-and-stars .project-statement-lead { white-space: normal; }
+  .project-the-metal-in-i .project-statement-lead { white-space: normal; }
+  .project-the-metal-in-i .project-statement h2 { max-width: none; }
+  .poetry-manuscript { gap: clamp(56px, 18vw, 88px); }
+  .poetry-copy--spatial { display: none; }
+  .poetry-copy--mobile {
+    display: block;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .next-project.has-long-title h2 { font-size: 9vw; }
+  .research-points ul { font-size: 17px; }
+}
